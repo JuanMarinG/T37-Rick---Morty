@@ -1,12 +1,4 @@
-#prueba{
-  width: 200px;
-  height: 200px;
-  background-color: aqua;
+.card{
+  margin: 0 auto;
+  margin-top: 10%;
 }
-table{
-  border-style: solid;
-  border-width: 2px;
-  border-radius: 5px;
-
-}
-.container{margin-top: 40px;}

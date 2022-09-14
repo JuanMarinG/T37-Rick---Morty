@@ -1,28 +1,18 @@
-<!-- <div *ngFor="let character of datos"> -->
-  <div class="container">
-  <table class="table" ngFor="let character of datos">
-    <tr>
-      <th scope="col"><img src={{datos.image}}></th>
-    </tr>
-    <tr>
-      <th scope="col"></th>
-      <th scope="col">Nombre</th>
-      <th scope="col">Status</th>
-      <th scope="col">Especie</th>
-      <th scope="col">Origen</th>
-    </tr>
-    <tr>
-      <th scope="row">Datos</th>
-      <td>{{datos.name}}</td>
-      <td>{{datos.status}}</td>
-      <td>{{datos.species}}</td>
-      <td>{{datos.origin.name}}</td>
-    </tr>
 
-  </table>
+<div class="card" style="width: 18rem;">
+  <img src={{datos.image}}>
+  <div class="card-body">
+    <h5 class="card-title">Nombre: {{datos.name}}</h5>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Status: {{datos.status}}</li>
+    <li class="list-group-item">Especie: {{datos.species}}</li>
+    <li class="list-group-item">Origen: {{datos.origin.name}}</li>
+  </ul>
+  <div class="card-body">
+    <a href="../characters/" class="btn btn-primary">Volver</a>
+  </div>
+
 </div>
-<!-- </div> -->
 
-<!-- <ng-template #espera>Cargando personaje...</ng-template> -->
 
-<!-- <div id="prueba">asdasd</div> -->
